@@ -1,3 +1,4 @@
+// @ts-check
 const badRequest = () => {
     document.querySelector('div').innerHTML = ''
     let p = document.createElement('p')
@@ -13,7 +14,7 @@ const getWeatherStatus = (data) => {
     document.querySelector('#city').appendChild(city)
 
     let tempCelsius = document.createElement('p')
-    tempCelsius.textContent = `${data.forecast.forecastday[0].day.maxtemp_c}C`
+    tempCelsius.textContent = `${data.current.temp_c}C`
     document.querySelector('#weather-celcius').innerHTML = ''
     document.querySelector('#weather-celcius').appendChild(tempCelsius)
 
@@ -34,7 +35,7 @@ const getWeatherStatus = (data) => {
 
     document.querySelector('#sunset').innerHTML = ''
     let sunset = document.createElement('p')
-    sunset.textContent = data.forecast.forecastday[0].astro.sunrise
+    sunset.textContent = data.forecast.forecastday[0].astro.sunset
     document.querySelector('#sunset').appendChild(sunset)
 
 }

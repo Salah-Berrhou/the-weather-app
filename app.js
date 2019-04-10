@@ -1,3 +1,4 @@
+
 const request = new XMLHttpRequest()
 
 let city = ''
