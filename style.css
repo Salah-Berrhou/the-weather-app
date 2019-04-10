@@ -22,3 +22,26 @@ body{
 input:focus{
     outline: none;
 }
+#constainer{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#weather p {
+    font-size: 5rem;
+    color: #27ae60
+}
+
+span{
+    color: #27ae60;
+}
+img{
+    width: 100px;
+}
+
+p {
+    font-size: 2rem;
+    color: #27ae60
+}

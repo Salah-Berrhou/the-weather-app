@@ -13,17 +13,7 @@ let getWeather = function(city) {
             return response.json()
         }
     }).then(data => {
-            document.querySelector('div').innerHTML = ''
-            let p = document.createElement('p')
-            p.textContent = `The weather in ${city} is: ${data.forecast.forecastday[0].day.maxtemp_c}C`
-           return document.querySelector('div').appendChild(p)
+        getWeatherStatus(data)
     }).catch(() => badRequest())
-}
-
-const badRequest = () => {
-    document.querySelector('div').innerHTML = ''
-    let p = document.createElement('p')
-    p.textContent = `There is no info`
-    document.querySelector('div').appendChild(p)
 }
 
