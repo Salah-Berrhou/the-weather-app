@@ -22,7 +22,7 @@ body{
 input:focus{
     outline: none;
 }
-#constainer{
+#container{
     display: flex;
     justify-content: space-between;
     width: 60%;
@@ -44,4 +44,11 @@ img{
 p {
     font-size: 2rem;
     color: #27ae60
+}
+
+@media only screen and (max-width: 600px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+    }
 }
