@@ -5,3 +5,5 @@ I wnat to learn about all the ways i can call apis and play with them
 fixed some bugs now the app work.
 # version 0.3.2
 the app now work in phones
+# coming soon
+a butter ui and simple one, autocomplete and a submit button to keep the app more user friendlly.
